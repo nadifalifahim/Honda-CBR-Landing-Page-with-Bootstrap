@@ -1,0 +1,137 @@
+/* Variables Declaration */
+* {
+  --bg-dark-blue: #264653;
+  --color-orange: #e76f51;
+  --text-black: #0d0925;
+  --text-grey: #6c6c6c;
+  --text-muted: #d9dbe1;
+  --text-blue: #23a6f0;
+  --footer-black: #0b0d17;
+  transition: 0.5s ease-out all;
+}
+
+/* Element Declarations */
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+p,
+li {
+  cursor: default;
+  transition: 0.1s linear;
+}
+
+li:hover {
+  color: var(--color-orange);
+  transform: translateY(-3px);
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+h2:hover .heading-underline {
+  width: 4rem;
+}
+
+/* Custom Class Declarations */
+
+/* Background Colors */
+.custom-bg-dark-blue {
+  background: var(--bg-dark-blue);
+}
+.custom-bg-orange {
+  background: var(--color-orange);
+}
+.custom-bg-black {
+  background: var(--text-black);
+}
+
+/* Text Colors */
+.custom-text-orange {
+  color: var(--color-orange);
+}
+.custom-text-grey {
+  color: var(--text-grey);
+}
+.custom-text-blue {
+  color: var(--text-blue);
+}
+.custom-text-muted {
+  color: var(--text-muted);
+}
+
+/* Font Weights */
+.custom-fw-light {
+  font-weight: 300;
+}
+.custom-fw-regular {
+  font-weight: 400;
+}
+.custom-fw-medium {
+  font-weight: 500;
+}
+.custom-fw-semibold {
+  font-weight: 600;
+}
+
+/* Font Sizes */
+@media (min-width: 768px) {
+  .custom-fs-1 {
+    font-size: 4em;
+  }
+}
+@media (max-width: 767px) {
+  .custom-fs-1 {
+    font-size: 2em;
+  }
+}
+
+/* Button Outlines */
+.custom-btn-outline-orange {
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  transition: 0.3s ease-out all;
+}
+.custom-btn-outline-orange:hover {
+  color: white;
+  background: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+
+/* Grayscale Image */
+.custom-img-grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.5s ease-out all;
+}
+
+.custom-img-grayscale:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* Heading Underline */
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: var(--color-orange);
+  margin: 0.5rem auto 1rem;
+}
+
+/* Carousel */
+.carousel-body {
+  width: 100%;
+  height: auto;
+  padding: 3em;
+  min-height: 50vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
